@@ -9,6 +9,10 @@ public class OrderService {
 
     private final ShippingService shippingService;
 
+    /**
+     * Autowired não necessário para este tipo de injeção a partir da versão 4.3 do spring
+     * https://docs.spring.io/spring-framework/reference/core/beans/annotation-config/autowired.html
+     */
     public OrderService(ShippingService shippingService) {
         this.shippingService = shippingService;
     }
